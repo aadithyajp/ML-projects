@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Chennai House Price Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="AREA" placeholder="AREA" required="required" /><br>
+    	<input type="text" name="INT_SQFT" placeholder="INT_SQFT" required="required" /><br>
+        <input type="text" name="N_BEDROOM" placeholder="N_BEDROOM" required="required" /><br>
+        <input type="text" name="N_BATHROOM" placeholder="N_BATHROOM" required="required" /><br>
+        <input type="text" name="N_ROOM" placeholder="N_ROOM" required="required" /><br>
+        <input type="text" name="SALE_COND" placeholder="SALE_COND" required="required" /><br>
+        <input type="text" name="PARK_FACIL" placeholder="PARK_FACIL" required="required" /><br>
+        <input type="text" name="UTILITY_AVAIL" placeholder="UTILITY_AVAIL" required="required" /><br>
+        <input type="text" name="STREET" placeholder="STREET" required="required" /><br>
+        <input type="text" name="MZZONE" placeholder="MZZONE" required="required" /><br>
+        <input type="text" name="Sold_Age" placeholder="Sold_Age" required="required" /><br>
+        <input type="text" name="Commercial" placeholder="Commercial" required="required" /><br>
+        <input type="text" name="House" placeholder="House" required="required" /><br>
+        <input type="text" name="Others" placeholder="Others" required="required" /><br>
+       
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{prediction_text}}
+
+</body>
+</html>
