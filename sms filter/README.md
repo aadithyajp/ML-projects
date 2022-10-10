@@ -3,7 +3,7 @@
 ## Directory Structure
 
 > 1. ### The repositoy contains the file required to create the Spam detector and App deployment code.
-> 2. ### The "final-project.ipynb" file is a notebook which you can open and run using colab (recommended).
+> 2. ### The "sms_detection(spam or ham).ipynb" file is a notebook which you can open and run using colab (recommended).
 > 3. ### Other files are needed to run the app.
 
 ## How to run the code
